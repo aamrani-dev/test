@@ -1,0 +1,23 @@
+add_executable(tbsla_spmv tbsla_spmv.cpp)
+target_link_libraries(tbsla_spmv PRIVATE tbsla)
+install(TARGETS tbsla_spmv DESTINATION bin)
+
+add_executable(tbsla_gen_matrix tbsla_gen_matrix.cpp)
+target_link_libraries(tbsla_gen_matrix PRIVATE tbsla)
+install(TARGETS tbsla_gen_matrix DESTINATION bin)
+
+add_executable(tbsla_mm_to_binCOO tbsla_mm_to_binCOO.cpp)
+target_link_libraries(tbsla_mm_to_binCOO PRIVATE tbsla)
+install(TARGETS tbsla_mm_to_binCOO DESTINATION bin)
+
+add_executable(tbsla_binCOO_to_binCSR tbsla_binCOO_to_binCSR.cpp)
+target_link_libraries(tbsla_binCOO_to_binCSR PRIVATE tbsla)
+install(TARGETS tbsla_binCOO_to_binCSR DESTINATION bin)
+
+add_executable(tbsla_print_binCOO_as_Dense tbsla_print_binCOO_as_Dense.cpp)
+target_link_libraries(tbsla_print_binCOO_as_Dense PRIVATE tbsla)
+install(TARGETS tbsla_print_binCOO_as_Dense DESTINATION bin)
+
+add_executable(tbsla_check_yml_results tbsla_check_yml_results.cpp)
+target_link_libraries(tbsla_check_yml_results PRIVATE tbsla)
+install(TARGETS tbsla_check_yml_results DESTINATION bin)
